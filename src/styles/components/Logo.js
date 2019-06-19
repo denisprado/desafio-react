@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import logo from '../../assets/images/logo-white.png';
+import logo from '../../assets/images/logo@3x.png';
 
 const sizes = {
   small: css`
@@ -13,6 +13,8 @@ const sizes = {
 };
 
 const Logo = styled.div`
+  margin: 15px auto;
+  background-size: contain;
   background-image: url(${logo});
   ${props => sizes[props.sizes || 'default']}
 `;
