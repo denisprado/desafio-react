@@ -1,5 +1,5 @@
-import { createReducer, createActions } from 'reduxsauce';
 import Immutable from 'seamless-immutable';
+import { createReducer, createActions } from 'reduxsauce';
 
 /* Types & Action Creators */
 
@@ -20,9 +20,7 @@ export const INITIAL_STATE = Immutable({
 
 /* Reducers */
 
-export const success = (state, { token }) => {
-  state.merge({ signedIn: true, token });
-};
+export const success = (state, { token }) => state.merge({ signedIn: true, token });
 
 /* Reducers to types */
 
